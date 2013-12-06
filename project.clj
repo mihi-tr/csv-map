@@ -1,4 +1,4 @@
-(defproject csv-map "0.1.0-SNAPSHOT"
+(defproject csv-map "0.1.0"
   :description "Convert well formatted CSV files to maps and vice versa"
   :url "http://github.com/mihi-tr/csv-map"
   :license {:name "Eclipse Public License"
