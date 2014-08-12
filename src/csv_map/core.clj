@@ -14,7 +14,7 @@
 
 ;; API
 
-(defn parse-csv-k
+(defn parse-csv
   "parses a csv to a map
    ([csv & {:as opts}])
    passes options to clojure-csv

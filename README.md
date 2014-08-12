@@ -9,7 +9,7 @@ from the same structures
 In leiningen add 
 
 ```clojure
-[csv-map "0.1.0-SNAPSHOT"]
+[csv-map "0.1.1-SNAPSHOT"]
 ```
 
 Like clojure-csv csv-map exposes two public functions: parse-csv and
@@ -20,6 +20,7 @@ write-csv. Use it like:
 (parse-csv (slurp "file.csv"))
 ```
 
+To parse the column names into keywords use ```:key :keyword``` as options.
 csv-map uses clojure-csv as backend: this means you can pass any opts you
 would pass to clojure-csv into csv-map and the options will be passed on to
 clojure-csv's parse and write functions.
