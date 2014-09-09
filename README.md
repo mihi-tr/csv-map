@@ -9,7 +9,7 @@ from the same structures
 In leiningen add 
 
 ```clojure
-[csv-map "0.1.1-SNAPSHOT"]
+[csv-map "0.1.1"]
 ```
 
 Like clojure-csv csv-map exposes two public functions: parse-csv and
