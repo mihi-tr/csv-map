@@ -24,7 +24,7 @@
   [csv & {key :key :as opts}]
   (let [opts   (vec (reduce concat (vec opts)))
         c      (apply clojure-csv.core/parse-csv csv opts)
-        output (map (partial zipmap (reverse (first c))) (map reverse (rest c)))]
+        output (map (partial zipmap (first c)) (rest c))]
     (if (= key :keyword) (map keywordize- output) output)))
 
 (defn write-csv
